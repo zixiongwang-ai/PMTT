@@ -1,0 +1,115 @@
+# Paths are relative to this file unless absolute. Set the empty entries locally.
+[paths]
+output = "../outputs/paper"
+dinov3_source = ""
+weights_s = ""
+weights_b = ""
+weights_l = ""
+weights_hplus = ""
+native_library = ""
+imagenet = ""
+spair = ""
+davis = ""
+megadepth = ""
+scannet = ""
+nyu = ""
+ade = ""
+
+[backbone]
+scales = ["S", "B", "L", "H+"]
+aliases = ["vits16", "vitb16", "vitl16", "vith16plus"]
+widths = [384, 768, 1024, 1280]
+patch_size = 16
+autocast = "bfloat16"
+representation_dtype = "float32"
+geometry_dtype = "float32"
+tf32 = false
+structured_batch = 17
+intrinsic_canonical_batch = 1
+intrinsic_orbital_chunk = 32
+
+[representation]
+visible = 16
+hidden = 16
+orbital_total = 32
+rank = 8
+bound = 1.0
+crop_size = 224
+aspect_range = [0.75, 1.3333333333333333]
+directions = [0, 2, 4, 6, 1, 3, 5, 7]
+intrinsic_cap_quantile = 0.999
+intrinsic_cap_multiplier = 1.05
+intrinsic_control_seed = 20261024
+cohort_size = 4096
+
+[geometry]
+primary_anchors = 32
+landscape_grid = [8, 4]
+portrait_grid = [4, 8]
+supplementary_anchors = 64
+supplementary_scales = ["B", "H+"]
+source_margin = 0.08
+target_long_side = 640
+target_rounding = "nearest multiple of 16 on each axis"
+depth_consistency = 0.05
+refinement_temperature = 1.0
+refinement_neighborhood = 3
+megadepth_pose_threshold = 0.5
+scannet_pose_threshold = 4.0
+pose_threshold_candidates = [0.5, 1.0, 2.0, 4.0]
+pose_confidence = 0.999
+pose_iterations = 10000
+pose_failure_degrees = 180.0
+calibration_pairs = 128
+fit_pairs = 96
+validation_pairs = 32
+untouched_pairs = 1372
+
+[readers]
+l2_candidates = [0.0001, 0.001, 0.01]
+spair_l2 = [0.0001, 0.0001, 0.001]
+davis_l2 = [0.01, 0.01, 0.01]
+nyuv2_mixture_l2 = [0.01, 0.01]
+ade20k_mixture_l2 = [0.0001, 0.001]
+capacities = [24, 8, 9]
+standardization_epsilon = 0.000001
+solver_maxiter = 600
+solver_gtol = 0.000002
+solver_ftol = 0.00000000001
+axis_l2 = 0.0001
+axis_maxiter = 500
+axis_gtol = 0.00001
+axis_ftol = 0.000000001
+
+[tasks]
+spair_target_grid = [64, 64]
+spair_bbox_threshold = 0.1
+spair_coordinate_offset = 0.5
+davis_target_long_side = 448
+davis_topk = 8
+davis_temperature = 1.0
+davis_training_query_patches = 32
+dense_grid = [14, 14]
+nyuv2_training_patches = 4
+ade20k_training_patches = 64
+dense_calibration_images = 4096
+dense_validation_images = 1024
+nyuv2_test_images = 654
+nyuv2_depth_range = [0.001, 10.0]
+nyuv2_evaluation_rows = [45, 471]
+nyuv2_evaluation_columns = [41, 601]
+ade20k_validation_images = 2000
+ade20k_classes = 150
+ade20k_ignore_label = 0
+align_corners = false
+
+[statistics]
+bootstrap_draws = 2000
+downstream_seed = 20261025
+intrinsic_paired_seed = 931
+
+[readers.megadepth]
+selected_l2 = [0.001, 0.001, 0.0001]
+
+[readers.scannet]
+selected_l2 = [0.0001, 0.01, 0.0001]

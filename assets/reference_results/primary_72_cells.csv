@@ -1,0 +1,73 @@
+dataset,scale,representation,score,units,metric,metric_direction,aggregation_unit,native_metric,native_value,native_direction
+spair,S,Center,0.461461824110135,12234,PCK@0.1_bbox,higher,pair,PCK@0.1_bbox,0.461461824110135,higher
+spair,S,Observed,0.4736097273797663,12234,PCK@0.1_bbox,higher,pair,PCK@0.1_bbox,0.4736097273797663,higher
+spair,S,Manifold,0.4809346979440268,12234,PCK@0.1_bbox,higher,pair,PCK@0.1_bbox,0.4809346979440268,higher
+spair,B,Center,0.5423195362738882,12234,PCK@0.1_bbox,higher,pair,PCK@0.1_bbox,0.5423195362738882,higher
+spair,B,Observed,0.5427384294900824,12234,PCK@0.1_bbox,higher,pair,PCK@0.1_bbox,0.5427384294900824,higher
+spair,B,Manifold,0.5491237206774748,12234,PCK@0.1_bbox,higher,pair,PCK@0.1_bbox,0.5491237206774748,higher
+spair,L,Center,0.5450480028982883,12234,PCK@0.1_bbox,higher,pair,PCK@0.1_bbox,0.5450480028982883,higher
+spair,L,Observed,0.5524748664070284,12234,PCK@0.1_bbox,higher,pair,PCK@0.1_bbox,0.5524748664070284,higher
+spair,L,Manifold,0.5577619780816955,12234,PCK@0.1_bbox,higher,pair,PCK@0.1_bbox,0.5577619780816955,higher
+spair,H+,Center,0.4748777284666244,12234,PCK@0.1_bbox,higher,pair,PCK@0.1_bbox,0.4748777284666244,higher
+spair,H+,Observed,0.4897880626754823,12234,PCK@0.1_bbox,higher,pair,PCK@0.1_bbox,0.4897880626754823,higher
+spair,H+,Manifold,0.4748211212752468,12234,PCK@0.1_bbox,higher,pair,PCK@0.1_bbox,0.4748211212752468,higher
+davis,S,Center,0.2729131736276314,30,J&F,higher,sequence (object-track weighted),J&F,0.2729131736276314,higher
+davis,S,Observed,0.28656529590316665,30,J&F,higher,sequence (object-track weighted),J&F,0.28656529590316665,higher
+davis,S,Manifold,0.2873136930278097,30,J&F,higher,sequence (object-track weighted),J&F,0.2873136930278097,higher
+davis,B,Center,0.286430809869914,30,J&F,higher,sequence (object-track weighted),J&F,0.286430809869914,higher
+davis,B,Observed,0.30323654753280177,30,J&F,higher,sequence (object-track weighted),J&F,0.30323654753280177,higher
+davis,B,Manifold,0.3019831619618456,30,J&F,higher,sequence (object-track weighted),J&F,0.3019831619618456,higher
+davis,L,Center,0.29935461670725666,30,J&F,higher,sequence (object-track weighted),J&F,0.29935461670725666,higher
+davis,L,Observed,0.31424856070568064,30,J&F,higher,sequence (object-track weighted),J&F,0.31424856070568064,higher
+davis,L,Manifold,0.3136067574579813,30,J&F,higher,sequence (object-track weighted),J&F,0.3136067574579813,higher
+davis,H+,Center,0.2635299553756652,30,J&F,higher,sequence (object-track weighted),J&F,0.2635299553756652,higher
+davis,H+,Observed,0.268372198372591,30,J&F,higher,sequence (object-track weighted),J&F,0.268372198372591,higher
+davis,H+,Manifold,0.26895602790403333,30,J&F,higher,sequence (object-track weighted),J&F,0.26895602790403333,higher
+megadepth,S,Center,0.20828108572576873,1500,P@10,higher,pair,P@10,0.20828108572576873,higher
+megadepth,S,Observed,0.27643281399194375,1500,P@10,higher,pair,P@10,0.27643281399194375,higher
+megadepth,S,Manifold,0.28651722541229874,1500,P@10,higher,pair,P@10,0.28651722541229874,higher
+megadepth,B,Center,0.2469942410206914,1500,P@10,higher,pair,P@10,0.2469942410206914,higher
+megadepth,B,Observed,0.2965311959663555,1500,P@10,higher,pair,P@10,0.2965311959663555,higher
+megadepth,B,Manifold,0.3031015143965978,1500,P@10,higher,pair,P@10,0.3031015143965978,higher
+megadepth,L,Center,0.23553301943341654,1500,P@10,higher,pair,P@10,0.23553301943341654,higher
+megadepth,L,Observed,0.2606576502502199,1500,P@10,higher,pair,P@10,0.2606576502502199,higher
+megadepth,L,Manifold,0.26940427708412296,1500,P@10,higher,pair,P@10,0.26940427708412296,higher
+megadepth,H+,Center,0.1331314173101493,1500,P@10,higher,pair,P@10,0.1331314173101493,higher
+megadepth,H+,Observed,0.14650129974109985,1500,P@10,higher,pair,P@10,0.14650129974109985,higher
+megadepth,H+,Manifold,0.15696796244031067,1500,P@10,higher,pair,P@10,0.15696796244031067,higher
+scannet,S,Center,0.09356852352089554,1500,P@10,higher,pair,P@10,0.09356852352089554,higher
+scannet,S,Observed,0.10395608309345153,1500,P@10,higher,pair,P@10,0.10395608309345153,higher
+scannet,S,Manifold,0.10515525611320443,1500,P@10,higher,pair,P@10,0.10515525611320443,higher
+scannet,B,Center,0.10227192671553784,1500,P@10,higher,pair,P@10,0.10227192671553784,higher
+scannet,B,Observed,0.11052626107113374,1500,P@10,higher,pair,P@10,0.11052626107113374,higher
+scannet,B,Manifold,0.11291014601019769,1500,P@10,higher,pair,P@10,0.11291014601019769,higher
+scannet,L,Center,0.08592447708083734,1500,P@10,higher,pair,P@10,0.08592447708083734,higher
+scannet,L,Observed,0.09904001567775143,1500,P@10,higher,pair,P@10,0.09904001567775143,higher
+scannet,L,Manifold,0.09858021861738177,1500,P@10,higher,pair,P@10,0.09858021861738177,higher
+scannet,H+,Center,0.0601628857038256,1500,P@10,higher,pair,P@10,0.0601628857038256,higher
+scannet,H+,Observed,0.06784226527525189,1500,P@10,higher,pair,P@10,0.06784226527525189,higher
+scannet,H+,Manifold,0.06590429745385956,1500,P@10,higher,pair,P@10,0.06590429745385956,higher
+nyu,S,Center,-0.21697249928005027,654,-AbsRel,higher,image,AbsRel,0.21697249928005027,lower
+nyu,S,Observed,-0.21497186791792727,654,-AbsRel,higher,image,AbsRel,0.21497186791792727,lower
+nyu,S,Manifold,-0.2148909830804085,654,-AbsRel,higher,image,AbsRel,0.2148909830804085,lower
+nyu,B,Center,-0.19998311597226187,654,-AbsRel,higher,image,AbsRel,0.19998311597226187,lower
+nyu,B,Observed,-0.1970218946063889,654,-AbsRel,higher,image,AbsRel,0.1970218946063889,lower
+nyu,B,Manifold,-0.19827834956010534,654,-AbsRel,higher,image,AbsRel,0.19827834956010534,lower
+nyu,L,Center,-0.1882919472678172,654,-AbsRel,higher,image,AbsRel,0.1882919472678172,lower
+nyu,L,Observed,-0.18583123286325007,654,-AbsRel,higher,image,AbsRel,0.18583123286325007,lower
+nyu,L,Manifold,-0.18809403021511192,654,-AbsRel,higher,image,AbsRel,0.18809403021511192,lower
+nyu,H+,Center,-0.19117598536928135,654,-AbsRel,higher,image,AbsRel,0.19117598536928135,lower
+nyu,H+,Observed,-0.18957165371709178,654,-AbsRel,higher,image,AbsRel,0.18957165371709178,lower
+nyu,H+,Manifold,-0.19042308086640125,654,-AbsRel,higher,image,AbsRel,0.19042308086640125,lower
+ade,S,Center,0.23674922529538484,2000,mIoU,higher,image (additive confusion),mIoU,0.23674922529538484,higher
+ade,S,Observed,0.23393727383804844,2000,mIoU,higher,image (additive confusion),mIoU,0.23393727383804844,higher
+ade,S,Manifold,0.24132297386979507,2000,mIoU,higher,image (additive confusion),mIoU,0.24132297386979507,higher
+ade,B,Center,0.3044729885346243,2000,mIoU,higher,image (additive confusion),mIoU,0.3044729885346243,higher
+ade,B,Observed,0.299053589044999,2000,mIoU,higher,image (additive confusion),mIoU,0.299053589044999,higher
+ade,B,Manifold,0.3109607701362399,2000,mIoU,higher,image (additive confusion),mIoU,0.3109607701362399,higher
+ade,L,Center,0.3404691072477465,2000,mIoU,higher,image (additive confusion),mIoU,0.3404691072477465,higher
+ade,L,Observed,0.33877719606626155,2000,mIoU,higher,image (additive confusion),mIoU,0.33877719606626155,higher
+ade,L,Manifold,0.3471963085496812,2000,mIoU,higher,image (additive confusion),mIoU,0.3471963085496812,higher
+ade,H+,Center,0.31065261465972127,2000,mIoU,higher,image (additive confusion),mIoU,0.31065261465972127,higher
+ade,H+,Observed,0.3130112633428169,2000,mIoU,higher,image (additive confusion),mIoU,0.3130112633428169,higher
+ade,H+,Manifold,0.32028348368825393,2000,mIoU,higher,image (additive confusion),mIoU,0.32028348368825393,higher

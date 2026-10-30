@@ -1,0 +1,17 @@
+task,scale,order,image_id
+nyu,S,0,nyu/bedroom_0052/rgb_00170.jpg
+nyu,S,1,nyu/playroom_0004/rgb_00113.jpg
+nyu,B,0,nyu/bedroom_0052/rgb_00170.jpg
+nyu,B,1,nyu/playroom_0004/rgb_00113.jpg
+nyu,L,0,nyu/bedroom_0052/rgb_00170.jpg
+nyu,L,1,nyu/playroom_0004/rgb_00113.jpg
+nyu,H+,0,nyu/bedroom_0052/rgb_00170.jpg
+nyu,H+,1,nyu/playroom_0004/rgb_00113.jpg
+ade,S,0,ADE_train_00000004
+ade,S,1,ADE_train_00000003
+ade,B,0,ADE_train_00000004
+ade,B,1,ADE_train_00000003
+ade,L,0,ADE_train_00000004
+ade,L,1,ADE_train_00000003
+ade,H+,0,ADE_train_00000004
+ade,H+,1,ADE_train_00000003

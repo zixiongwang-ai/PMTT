@@ -1,0 +1,22 @@
+{
+  "S": {
+    "l2": 0.0001,
+    "examples": 96924,
+    "parameters": 385
+  },
+  "B": {
+    "l2": 0.0001,
+    "examples": 96924,
+    "parameters": 769
+  },
+  "L": {
+    "l2": 0.0001,
+    "examples": 96924,
+    "parameters": 1025
+  },
+  "H+": {
+    "l2": 0.0001,
+    "examples": 96924,
+    "parameters": 1281
+  }
+}

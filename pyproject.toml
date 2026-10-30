@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pmtt"
+version = "0.1.0"
+description = "A Patch is More Than a Token: representations and paper reproduction"
+readme = "README.md"
+license = {file = "LICENSE"}
+requires-python = ">=3.11"
+dynamic = ["dependencies"]
+authors = [
+    {name = "Zixiong Wang"},
+    {name = "Haiping Ma"},
+]
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.11",
+]
+
+[tool.setuptools.dynamic]
+dependencies = {file = ["requirements.txt"]}
+
+[tool.setuptools.packages.find]
+include = ["pmtt*"]

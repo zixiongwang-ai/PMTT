@@ -1,0 +1,8 @@
+cmake_minimum_required(VERSION 3.16)
+project(pmtt_pose LANGUAGES CXX)
+find_package(OpenCV REQUIRED COMPONENTS core calib3d)
+add_library(pmtt_pose SHARED pose_bridge.cpp)
+target_include_directories(pmtt_pose PRIVATE ${OpenCV_INCLUDE_DIRS})
+target_link_libraries(pmtt_pose PRIVATE ${OpenCV_LIBS})
+target_compile_features(pmtt_pose PRIVATE cxx_std_11)
+set_target_properties(pmtt_pose PROPERTIES WINDOWS_EXPORT_ALL_SYMBOLS ON)
