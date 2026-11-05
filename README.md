@@ -1,31 +1,29 @@
+
 # A Patch is More Than a Token (PMTT)
 
-PMTT extends a patch representation from one Canonical State to a
-canonical-centered Representation State Family. Dense Orbital Views expose
-identity-preserving states of the same image patch. **Observed** retains the
-Canonical State and sixteen actual Visible States. **Manifold** organizes the
-same Visible information as a bounded, rank-at-most-eight local geometry
-within Patch-Level Local Feature Space.
+**Paper:** [A Patch is More Than a Token](https://arxiv.org/abs/2610.41814)
 
-This repository provides:
+**Follow-up paper:** [A Patch in a Static Image Can Explain Part of the Future](https://doi.org/10.5281/zenodo.23984040)
+
+PMTT extends a patch representation from one Canonical State to a canonical-centered Representation State Family. Dense Orbital Views expose identity-preserving states of the same image patch. **Observed** retains the Canonical State and sixteen actual Visible States. **Manifold** organizes the same Visible information as a bounded, rank-at-most-eight local geometry within Patch-Level Local Feature Space.
+
+The follow-up work, **PMTT Physics**, investigates whether this static patch-level geometry aligns with subsequent physical evolution. It establishes a connection between static representation structure and future latent dynamics, and investigates how that alignment is organized by current physical state and constraints.
+
+## What this repository provides
 
 - the PMTT representation implementation;
 - Visible-to-Hidden intrinsic evaluation;
-- SPair-71k, DAVIS-2017, MegaDepth-1500, ScanNet-1500, NYUv2, and ADE20K
-  evaluation;
+- SPair-71k, DAVIS-2017, MegaDepth-1500, ScanNet-1500, NYUv2, and ADE20K evaluation;
 - fitting code for the low-capacity readers and dense task axes;
-- exact cohort identities, manifests, fitted parameters, calibration
-  identities, and aggregate reference results used in the paper.
+- exact cohort identities, manifests, fitted parameters, calibration identities, and aggregate reference results used in the paper.
 
-DINOv3 supplies the frozen S, B, L, and H+ backbones. Datasets and pretrained
-weights are external and are not redistributed.
+DINOv3 supplies the frozen S, B, L, and H+ backbones. Datasets and pretrained weights are external and are not redistributed.
 
 ## Getting started
 
 1. Follow [INSTALL.md](INSTALL.md).
 2. Obtain and prepare the datasets described in [DATA.md](DATA.md).
-3. Configure local paths in
-   [`configs/paper_reproduction.toml`](configs/paper_reproduction.toml).
+3. Configure local paths in [`configs/paper_reproduction.toml`](configs/paper_reproduction.toml).
 4. Verify the external DINOv3 checkpoints:
    ```sh
    python scripts/check_weights.py \
@@ -42,21 +40,25 @@ python scripts/reproduce_all.py \
     --output outputs/paper
 ```
 
-The repository also supports full refitting of the readers, geometry
-calibration, and dense task axes from the fixed fitting identities.
+The repository also supports full refitting of the readers, geometry calibration, and dense task axes from the fixed fitting identities.
 
 ## Scientific comparisons
 
 PMTT separates information acquisition from representation organization:
 
-- **Observed − Center** measures the value of additional same-patch
-  observations.
-- **Manifold − Observed** measures the value of organizing the same acquired
-  information.
+- **Observed − Center** measures the value of additional same-patch observations.
+- **Manifold − Observed** measures the value of organizing the same acquired information.
 - **Manifold − Center** measures the total representation-extension effect.
 
-Full-32 uses all orbital states and serves only as an intrinsic diagnostic
-ceiling. It is never used as the inference representation.
+Full-32 uses all orbital states and serves only as an intrinsic diagnostic ceiling. It is never used as the inference representation.
+
+## Relationship to PMTT Physics
+
+PMTT establishes that a patch can be represented by a structured, low-dimensional local feature space rather than only a single feature token. It investigates the internal geometry, the organization of observation-conditioned states, and their value for visual representation and downstream tasks.
+
+The follow-up paper, [A Patch in a Static Image Can Explain Part of the Future](https://doi.org/10.5281/zenodo.23984040), extends this representation foundation into physical dynamics. It evaluates whether geometry extracted entirely from a current static image can explain part of independently observed future latent variation, and identifies a New Physics Question Space concerning the alignment between static observation geometry and physical-time evolution.
+
+The two papers address connected but distinct scientific questions: the structure and utility of patch-level representation in PMTT, and its relationship to future physical evolution in PMTT Physics.
 
 ## Repository layout
 
@@ -69,19 +71,24 @@ native/      OpenCV pose bridge
 tests/       CPU tests for coordinates, observations, geometry, and metrics
 ```
 
-The compact reference results are documented in [RESULTS.md](RESULTS.md).
-The scientific assets are described in
-[`assets/README.md`](assets/README.md).
+The compact reference results are documented in [RESULTS.md](RESULTS.md). The scientific assets are described in [`assets/README.md`](assets/README.md).
 
-## Paper
+## Papers
 
-**A Patch is More Than a Token**  
-Zixiong Wang and Haiping Ma, 2026.
+**Foundational paper**
+
+[A Patch is More Than a Token](https://arxiv.org/abs/2610.41814)  
+Zixiong Wang and Haiping Ma, 2026.  
+arXiv:2610.41814
+
+**Follow-up paper**
+
+[A Patch in a Static Image Can Explain Part of the Future](https://doi.org/10.5281/zenodo.23984040)  
+Zixiong Wang and Haiping Ma, 2026.  
+DOI: 10.5281/zenodo.23984040
 
 For inquiries: Zixiong Wang, `zixiongwang.ai@outlook.com`.
 
 ## License
 
-PMTT first-party code is released under the [MIT License](LICENSE).
-Datasets, DINOv3, and other third-party dependencies remain subject to their
-own terms; see [THIRD_PARTY.md](THIRD_PARTY.md).
+PMTT first-party code is released under the [MIT License](LICENSE). Datasets, DINOv3, and other third-party dependencies remain subject to their own terms; see [THIRD_PARTY.md](THIRD_PARTY.md).
